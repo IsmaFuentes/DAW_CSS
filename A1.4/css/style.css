@@ -1,0 +1,55 @@
+html {
+    overflow-x: hidden;
+}
+
+body{
+	background-color: #e0e0d1;
+
+}
+
+li {
+	float: left;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 2px;
+}
+ul {
+	margin-top: 0px;
+    list-style-type: none;
+    margin-left: -5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#header {
+	background-color: #c2c2a3;
+	padding-top: 0px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-bottom: 10px;
+}
+.img{
+	color: grey;
+
+}
+.section{
+	margin-left: -5px;
+	width: 82%;
+	display: inline-block;
+}
+.aside{
+	margin-right: -10px;
+	float: right;
+	width: 15%;
+	display: inline-block;
+}
+.footer {
+	background-color: #c2c2a3;
+    width: 110%;
+    display: inline-block;
+	margin-left: -5px;
+	margin-bottom: -10px;
+}

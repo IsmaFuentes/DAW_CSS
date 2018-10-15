@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#contenido{
+	width: 1000px;
+	margin: auto;
+}
+
+#cabecera {
+	display: inline-block;
+	height: 120px;
+	width: 80%;
+	background-color: #66ffff;
+	float: right;
+	border-bottom:2px dashed;
+}
+
+h1{
+	margin-left: 300px;
+}
+
+h3{
+	text-decoration: underline;
+}
+
+#subtitulo{
+	margin-left: 340px;
+}
+
+#logo{
+	border-bottom:2px dashed;
+	background-position: center center;
+	background-size: 200px;
+    background-repeat: no-repeat;
+	height: 120px;
+	width: 20%;
+	float: left;
+	background-image: url("imatges/logo.png");
+}
+
+li{
+	float: left;
+	height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+	background-color: green;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+#pattern{
+	border-top: 2px dashed;
+	border-bottom: 2px dashed;
+	display: inline-block;
+	margin-bottom: -4px;
+	height: 100px;
+	width: 100%;
+	background-image: url("imatges/pattern.jpg");
+}
+
+#pcs{
+	height: 300px;
+	width: 100%;
+	background-image: url("imatges/fotofrontal.jpg");
+	background-size: 100%;
+	background-attachment: relative;
+	background-position: 0px -85px;
+	background-repeat: no-repeat;
+}
+
+#tablas{
+	border-top:2px dashed;
+	border-bottom:2px dashed;
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	height: 250px;
+	width: 100%;
+	background-color: #d7dde5;
+}
+
+#tabla {
+	border-collapse: collapse;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+#tabla tr:nth-child(even){
+	background-color: grey;
+}
+
+th {
+	margin: 0;
+	padding: 0;
+    height: 30px;
+    width: 150px;
+    background-color: #00ffff;
+}
+
+td{
+	height: 30px;
+}
+
+
+#angular, #html5, #javascript, #php {
+	margin: auto;
+	height: 250px;
+	width: 250px;
+}
+
+#angular, #html5, #javascript, #php{
+	float: left;
+	text-align: center;
+	opacity: 0.5;
+}
+
+#angular{
+	background-image: url("imatges/angular.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: center;
+}
+
+#html5{
+	background-image: url("imatges/html5.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: center;
+}
+
+#javascript{
+	background-image: url("imatges/javascript.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: center;
+}
+
+#php{
+	background-image: url("imatges/php.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: center;
+}
+
+#ang, #htm, #jav, #ph{
+	float: left;
+	text-align: center;
+	height: 50px;
+	width: 250px;
+	font-weight: bold;
+	border-bottom:2px dashed;
+}
+
+footer{
+	background-color: black;
+	height: 100px;
+	width: 100%;
+	margin-top: 301px;
+}
+
+span{
+	color: white;
+}
+
+#down{
+	float: right;
+	margin-top: 75px;
+}
+
+#up{
+	float: left;
+	margin-top: 5px;
+}
