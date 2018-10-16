@@ -10,7 +10,7 @@ body{
 
 #cabecera {
 	display: inline-block;
-	height: 120px;
+	height: 118px;
 	width: 80%;
 	background-color: #66ffff;
 	float: right;
@@ -34,13 +34,14 @@ h3{
 	background-position: center center;
 	background-size: 200px;
     background-repeat: no-repeat;
-	height: 120px;
+	height: 118px;
 	width: 20%;
 	float: left;
 	background-image: url("imatges/logo.png");
 }
 
 li{
+	margin-right: 1px;
 	float: left;
 	height: 50px;
 }
@@ -66,7 +67,7 @@ li a {
 	border-bottom: 2px dashed;
 	display: inline-block;
 	margin-bottom: -4px;
-	height: 100px;
+	height: 96px;
 	width: 100%;
 	background-image: url("imatges/pattern.jpg");
 }
@@ -82,12 +83,12 @@ li a {
 }
 
 #tablas{
+	padding-top: 10px;
 	border-top:2px dashed;
 	border-bottom:2px dashed;
 	display: inline-block;
-	justify-content: center;
 	text-align: center;
-	height: 250px;
+	height: 236px;
 	width: 100%;
 	background-color: #d7dde5;
 }
@@ -114,24 +115,32 @@ td{
 	height: 30px;
 }
 
-
-#angular, #html5, #javascript, #php {
-	margin: auto;
-	height: 250px;
-	width: 250px;
-}
-
-#angular, #html5, #javascript, #php{
+#logo1, #logo2, #logo3, #logo4 {
+	border-right:1px solid black;
+	border-left:1px solid black;
+	border-bottom: 2px dashed;
+	height: 298px;
+	width: 248px;
 	float: left;
-	text-align: center;
-	opacity: 0.5;
 }
+
 
 #angular{
 	background-image: url("imatges/angular.png");
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
+	width: 100%;
+	height: 90%;
+	float: left;
+	text-align: center;
+	opacity: 0.5;
+}
+
+#ang {
+	text-align: center;
+	font-family:"verdana";
+	font-weight: bold;
 }
 
 #html5{
@@ -139,13 +148,17 @@ td{
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
+	width: 100%;
+	height: 90%;
+	float: left;
+	text-align: center;
+	opacity: 0.5;
 }
 
-#javascript{
-	background-image: url("imatges/javascript.png");
-	background-repeat: no-repeat;
-	background-size: 90%;
-	background-position: center;
+#htm {
+	text-align: center;
+	font-family:"verdana";
+	font-weight: bold;
 }
 
 #php{
@@ -153,34 +166,55 @@ td{
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
-}
-
-#ang, #htm, #jav, #ph{
+	width: 100%;
+	height: 90%;
 	float: left;
 	text-align: center;
-	height: 50px;
-	width: 250px;
-	font-weight: bold;
-	border-bottom:2px dashed;
+	opacity: 0.5;
 }
 
+#ph {
+	text-align: center;
+	font-family:"verdana";
+	font-weight: bold;
+}
+
+#javascript{
+	background-image: url("imatges/javascript.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: center;
+	width: 100%;
+	height: 90%;
+	float: left;
+	text-align: center;
+	opacity: 0.5;
+}
+
+#js {
+	text-align: center;
+	font-family:"verdana";
+	font-weight: bold;
+}
 footer{
 	background-color: black;
 	height: 100px;
 	width: 100%;
-	margin-top: 301px;
+	margin-top: 300px;
 }
 
-span{
+#up, #down{
 	color: white;
 }
 
 #down{
 	float: right;
 	margin-top: 75px;
+	margin-right: 10px;
 }
 
 #up{
+	margin-left: 10px;
 	float: left;
 	margin-top: 5px;
 }
