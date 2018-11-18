@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<title>A2.7 - Exercise 2 - Layering and Shifting</title>
+<style>
+
+	body {
+		margin: 40px;
+	}
+
+	.wrapper {
+		grid-gap: 0.5px;
+		background-color: #fff;
+		color: #444;
+		display: grid;		
+		grid-template-columns: 200px 200px;
+		grid-template-rows: 200px 200px;
+	}
+
+	.box {
+		background-color: #444;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 200%;
+	}	
+
+	.a{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.b{
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.c{
+		grid-column: 1;
+		grid-row: 2;	
+	}
+	.d{
+		grid-column: 2;
+		grid-row: 2;	
+	}
+
+	.i{
+		z-index: 20;
+		background-color: rgba(49,121,207, 0.5);
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+       	width: 160px;
+        height: 160px;
+        align-self: center;
+        justify-self: center;
+	}
+	
+	
+    
+</style>
+</head>
+
+<body>
+	
+	
+<div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+
+	
+  <div class="box i">I</div>
+</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>Example</title>
+<style>
+.container { 
+	background-color: blue;
+	width:600px;
+	height:280px;
+	display: flex;
+}
+
+.container div {
+  color: white;
+  background-color:grey;
+	font-size: 30px;
+	text-align: center;
+	line-height: 20px; 
+	height:20px;
+	padding: 30px 40px;
+	margin:2px;
+	
+	width:50px;
+}
+	
+/********* ADD YOUR CODE FROM HERE **********/
+	div:nth-child(1){
+		color: red;
+		order: 1;
+		align-self: flex-end;
+		flex-grow: 1;
+	}
+
+	div:nth-child(2){
+		align-self: flex-end;
+	}
+
+	div:nth-child(3){
+		color: red;
+		order: -1;
+	}
+/********** END OF YOUR CODE ************/
+	
+</style>
+</head>
+<body>
+<div class="container c1"><div>1</div><div>2</div><div>3</div></div>	
+</body>
+</html>

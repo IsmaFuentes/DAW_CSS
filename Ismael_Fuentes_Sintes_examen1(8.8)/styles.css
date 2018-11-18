@@ -1,0 +1,135 @@
+body{
+	margin: auto;
+	padding: 0;
+	justify-content: center;
+	font-family: "Times new roman";
+	font-size: 13px;
+	background-color: #EDF6F3;
+}
+
+#container{
+	margin: auto;
+	padding: 0;
+	width: 858px;
+	height: 100%;
+}
+
+#header{
+	width: 100%;
+	height: 130px;
+	background-image: url(images/logo.jpg);
+	background-size: 118px 112px;
+	background-repeat: no-repeat;
+}
+
+nav{
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	height: 49px;
+	background-color: #958175;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	background-color: #958175;
+}
+
+li{
+	float: left;
+	width:122px;
+	height: 34px;
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	padding-top: 15px;
+}
+
+li:hover{
+	background-color: #aaaaaa;
+}
+
+#centralimg{
+	margin-top: 10px;
+	width: 100%;
+	height: 428px;
+	background-image: url("images/music.jpg");
+	background-size: 100%;
+}
+
+#texto{
+	font-family: "Lucida Sans Unicode";
+	font-size: 15px;
+	line-height: 1.8;
+	text-align: justify;
+	float: left;
+}
+
+#contents-left{
+	font-family: "Lucida Sans Unicode";
+	line-height: 1.8;
+	width: 565px;
+	height: 100%;
+	float: left;
+}
+
+#news{
+	margin-left: 10px;
+}
+
+.noticias{
+	text-decoration: none;
+	color: black;
+}
+
+h1{
+	color: #316e66;
+}
+
+h3{
+	font-size: 1.17em;
+	color:#316e66;
+}
+
+aside{
+	width: 285px;
+	height: 100%;
+	float: right;
+}
+
+#imgright{
+	width: 285px;
+	height: 144;
+}
+
+.opaco{
+	margin-top:12px;
+}
+.opaco:hover {
+	opacity: 0.5;
+}
+
+#footer{
+	width: 100%;
+	height: 55px;
+	background-color:  #594334;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#icons{
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
+.icono{
+	width: 35px;
+	height: 35px;
+}
+
+.selected{
+	background-color:#745745;
+}

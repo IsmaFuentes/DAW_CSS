@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A2.7 - Exercise 3- Creating a Responsive Grid</title><style>
+
+body {
+  	margin: 5px;
+}
+
+.box {
+	background-color: #444;
+  	color: #fff;
+  	border-radius: 2px;
+  	padding: 20px;
+  	font-size: 150%; 
+}
+
+.header, .footer {
+  	background-color: #999;
+}
+
+.sidebar2 {
+  	background-color: #ccc;
+  	color: #444;
+}	
+
+.wrapper {
+	background-color: #fff;
+	color: #444;
+    display: grid;
+    grid-gap: 5px;
+    /*Added*/
+    grid-template-areas: 
+    'header header header header'
+    'sidebar content1 content1 content1'
+    'sidebar content2 content2 content2'
+    'footer footer footer footer';
+    grid-template-columns: 200px auto;
+}	
+	
+.sidebar {grid-area: sidebar;}
+.content1 {grid-area: content1;}
+.content2 {grid-area: content2;}
+.header {grid-area: header; height: 110px;}
+.footer {grid-area: footer;}
+
+/*Added*/
+.img1{
+	position: relative;
+	right: 15px;
+	bottom: 15px;
+}
+
+.img2{
+	position: relative;
+	float: right;
+	width: 200px;
+  	bottom: 15px;
+  	left: 15px;
+}
+
+.img3{
+	position: relative;
+	width: 200px;
+	top:20px;
+	bottom: 0;
+	right: 15px;
+}
+
+
+/*Added*/
+@media only screen and (max-width: 600px) {
+	.wrapper {
+	    grid-template-areas: 
+	    'header'
+	    'sidebar'
+	    'content1'
+	    'content2'
+	    'footer';
+	    grid-template-columns: auto;
+	}
+}
+	
+   
+</style>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+
+		<div class="box header">
+			<img src="logo-bn.png" class="img1">
+		</div>
+
+		<div class="box sidebar">Sidebar</div>
+
+		<div class="box content1">
+			Content 1
+			<img src="event-2.jpg" class="img2">
+		</div>
+
+		<div class="box content2">
+			Content 2<br>
+			<img src="event-3.png" class="img3">
+		</div>
+
+		<div class="box footer">Footer</div>
+
+	</div>
+
+</body>
+</html>
