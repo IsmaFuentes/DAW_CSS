@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+
+/********** GENERAL **********/		
+		
+* {
+  box-sizing: border-box; 
+}
+	
+body {
+  margin: 0;
+/********** ADD YOUR CODE HERE ***********/
+
+/********** END OF YOUR CODE ***********/
+}
+	
+header {
+  background: grey;
+  height: 50px;
+}
+				
+
+		
+/********* MAIN **********/
+#main {
+	height:auto;
+/********** ADD YOUR CODE HERE ***********/
+	display: flex;
+
+/********** END OF YOUR CODE ***********/
+}
+	
+#main > nav {
+  flex: 0 0 200px;
+  background: black;
+/********** ADD YOUR CODE HERE ***********/
+	display: flex;
+/********** END OF YOUR CODE ***********/
+}
+
+#main > nav > ul {
+	list-style-type: none;
+	padding:0;
+}
+		
+#main > nav > ul > li {
+	list-style-type: none;
+	padding:0px 0 0 15px;
+	display:inline-block;
+	border:1px solid white;
+	min-width: 180px;
+}
+		
+#main > nav > ul > li > a{
+	color:azure;
+	text-decoration: none;
+	font-size:1.2em;
+}
+	
+#contents {
+	max-width:650px;
+/********** ADD YOUR CODE HERE ***********/
+	display: flex;
+	flex-flow: row wrap;
+/********** END OF YOUR CODE ***********/
+}
+	
+
+#main > aside {
+  background: lightgrey;
+/********** ADD YOUR CODE HERE ***********/
+	display: flex;
+	flex-flow: wrap column;
+	flex:1 0 200px;
+/********** END OF YOUR CODE ***********/
+}
+
+	
+	
+#contents > article {
+	margin-left:1px;
+	padding:2px;
+	min-height: 400px;
+	box-shadow:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-sizing: border-box; 
+/********** ADD YOUR CODE HERE ***********/
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 300px;
+	order: 0;
+	justify-content: space-between;
+/********** END OF YOUR CODE ***********/
+}
+	
+#contents > article > .icons {
+	font-size: 0.8em;
+}
+		
+	
+/********** ADD YOUR CODE HERE ***********/
+		
+/* insert CSS to change order of articles */
+#contents article:nth-child(2){
+	order: -1;
+}
+
+/********** END OF YOUR CODE ***********/
+		
+footer {
+  background: grey;
+  height: 50px;
+}
+		
+/********* RESPONSIVE **********/
+		
+@media screen and (max-width: 750px) {
+	
+/********** ADD YOUR CODE HERE ***********/
+	#main{
+		flex-flow: column;
+	}
+	#main > nav {
+		flex: 0;
+	}
+	#main > nav > ul {
+		font-size: 3vmax;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: center;
+		text-align: center;
+	}
+	#contents{
+		flex-flow: column;
+	}
+	#contents > article{
+		flex:0;
+	}
+	#contents > article > img{
+		width: 100%;
+	}
+	#main > aside{
+		flex: 0;
+		flex-flow: column;
+	}
+
+/********** END OF YOUR CODE ***********/
+	
+}
+		
+</style>
+</head>
+
+<body>
+  <header>Header</header>
+  <div id="main">
+    <nav>
+		
+			<ul>
+				<li><a href="#">NATIONAL</a></li>
+				<li><a href="#">INTERNATIONAL</a></li>
+				<li><a href="#">CULTURE</a></li>
+				<li><a href="#">SPORTS</a></li>
+				<li><a href="#">ECONOMY</a></li>
+			</ul>
+		
+		</nav>
+    
+		<div id="contents">
+			
+			<article>
+				<h3>Titular1</h3>
+				<img src="images3/1302006" alt="image">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar convallis accumsan.</p>
+				<div class="icons"> <i class="fa fa-comment"></i> 5 Comments
+				</div>
+			</article>
+
+			<article>
+				<h3>Titular2</h3>
+				<img src="images3/1302112" alt="image">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar convallis accumsan.</p>
+				<div class="icons"> <i class="fa fa-comment"></i> 7 Comments</div>
+			</article>
+			
+			
+			<article>
+				<h3>Titular3</h3>
+				<img src="images3/1302114" alt="image">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar convallis accumsan.</p>
+				<div class="icons"> <i class="fa fa-comment"></i> 2 Comments</div>
+			</article>
+			
+			<article>
+				<h3>Titular4</h3>
+				<img src="images3/1302162" alt="image">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar convallis accumsan.</p>
+				<div class="icons"> <i class="fa fa-comment"></i> 14 Comments</div>
+			</article>
+		</div>
+		
+		
+    <aside>
+	
+			<article>
+				<h4>Aside1</h4>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar convallis accumsan.</p>
+			</article>
+				
+			<article>
+				<h4>Aside2</h4>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar convallis accumsan.</p>
+			</article>
+
+			<article>
+				<h4>Aside3</h4>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar convallis accumsan.</p>
+			</article>
+
+			
+		</aside>
+  
+	</div>
+  <footer>Footer</footer>
+</body>
+</html>

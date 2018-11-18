@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+  flex-wrap:wrap;
+}
+
+.flex-container>div {
+  background-color: orange;
+  color: white;
+  width: 100px;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+/********* ADD YOUR CODE FROM HERE **********/
+.flex-container{
+    flex-grow: 0;
+}
+.flex-container :nth-child(2){
+    background-color: blue;
+    flex-grow: 2;
+}
+.flex-container :nth-child(6){
+    background-color: green;
+    flex-grow: 2;
+}
+.flex-container :nth-child(10){
+    background-color: red;
+    flex-grow: 2;
+}
+
+	
+/********** END OF YOUR CODE ************/
+	
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+</div>
+
+</body>
+</html>

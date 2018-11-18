@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<title>Example</title>
+<style>
+.container { 
+	background-color: grey;
+	width:900px;
+	height:150px;
+}
+
+.container div {
+  color: white;
+  background-color:black;
+	font-size: 25px;
+	text-align: center;
+  
+	height:30px;
+	width:50px;
+
+	padding: 30px 40px;
+	margin:2px;
+}
+	
+/********* ADD YOUR CODE FROM HERE **********/
+	
+.container{
+	display: flex;
+	align-items: center;
+}
+#i3{
+	order:-1;
+	background-color: orange;
+	align-self: flex-end;
+}
+#i4{
+	order:-1;
+	background-color: red;
+	align-self: flex-start;
+}
+#i7{
+	background-color: blue;
+	align-self: flex-start;}
+#i9{
+	background-color: green;
+	align-self: flex-end;
+}
+	
+	
+/********** END OF YOUR CODE ************/
+	
+</style>
+</head>
+<body>
+<div class="container c1">
+	<div id="i1">1</div><div id="i2">2</div><div id="i3">3</div>
+	<div id="i4">4</div><div id="i5">5</div><div id="i6">6</div>
+	<div id="i7">7</div><div id="i8">8</div><div id="i9">9</div>
+</div>	
+</body>
+</html>
