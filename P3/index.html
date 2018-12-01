@@ -8,10 +8,12 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<!--Font awesome-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="js/overlay.js"></script>
 	</head>
 
 	<body>
-		<div class="container">
+		<div class="container"><!--inicio contenedor-->
+
 			<!--Header-->
 			<div id="header">
 				<div class="contentheader">
@@ -23,19 +25,67 @@
 					</div>
 				</div>
 			</div>
+
 			<!--Menú-->
 			<div id="menu">
 				<div class="menudesp">
 					<ul class="navigation">
+						<li id="desplegable">
+							<a href="javascript:void(0);" id="icon">
+								<i class="fa fa-bars"></i>
+							</a>
+						</li>
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
-						<li><a href="#">Practices</a></li>
-						<li><a href="#">Our Lawyers</a></li>
+						<div class="dropdown a">
+							<li><a href="#">Practices</a></li>
+							<div class="dropdown-a-content">
+								<a href="#" class="efecto">| Mariage</a><br>
+								<a href="#" class="efecto">| Divorce</a><br>
+								<a href="#" class="efecto">| Agreements</a>
+							</div>
+						</div>
+
+						<div class="dropdown b">
+							<li><a href="#">Our Lawyers</a></li>
+							<div class="dropdown-b-content">
+								<a href="#" class="efecto">| Jhon Doe</a><br>
+								<a href="#" class="efecto">| Mary Doe</a><br>
+								<a href="#" class="efecto">| Peter Doe</a>
+							</div>
+						</div>
 						<li><a href="#">News</a></li>
-						<li><a href="#">Contact</a></li>
+						<li ><a href="#" id="contact">Contact</a></li>
 					</ul>
+
+					<div class="respsearch">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+				<!--Menú desplegable-->
+				<div id="cntdesp">
+					<a href="#">| HOME</a><br>
+					<a href="#">| ABOUT</a><br>
+					<a href="#">| PRACTICES</a><br>
+					<a href="#">| OUR LAWYERS</a><br>
+					<a href="#">| NEWS</a><br>
+					<a href="#" id="contactar">| CONTACT</a><br>
 				</div>
 			</div>
+
+			<!--Overlay-->
+			<div id="overlay">
+				<div id="formulario">
+					<h2>CONTACT INFO</h2>
+					<h2><i class="fa fa-home"></i> ADDRESS: c/ no name 123</h2>
+					<h2><i class="fa fa-phone"></i> PHONE:(+20) 000 222 999</h2>
+					<h2><i class="fa fa-fax"></i> FAX: (+20) 000 222 988</h2>
+					<h2><i class="fa fa-envelope"></i> EMAIL: info@freewebsitetemplates.com</h2>
+					<button id="close">CLOSE</button>
+				</div>
+			</div>
+
 			<!--Contenido-->
 			<div id="contents">
 
@@ -44,14 +94,14 @@
 						<h1>The Manes Winchester Promise</h1>
 						<p>
 							This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
-							</p>
+						</p>
 					</div>
 					<div class="testimonial">
 						<h2>Testimonials</h2>
 						<p>
 							&ldquo;Aenean ullamcorper purus vitae nisl tristique sollicitudin. Quisque vestibulum, erat ornare.&rdquo;
 						</p>
-						<span>-John Doe and Jane Doe-</span>
+						<span>-John Doe & Jane Doe-</span>
 					</div>
 				</div>
 			</div>
@@ -60,38 +110,96 @@
 				<h2>Why Choose Us?</h2>
 
 				<div id="frame1">
-					<div class="box">
-						<img src="images/meeting.jpg" alt="Img" height="130" width="197">
+					<div class="framecontainer">
+						<div class="box">
+							<img src="images/meeting.jpg" alt="Img">
+						</div>
+						<p><b>TITLE</b><br>Our website templates are created with inspiration, checked for quality and originality.</p>
+						<a href="index.html" class="more">Read More</a>
 					</div>
-					<p><b>Our lawyers</b><br>Our website templates are created with inspiration, checked for quality and originality.</p>
-					<a href="index.html" class="more">Read More</a>
 				</div>
 
 				<div id="frame2">
-					<div class="box">
-						<img src="images/meeting.jpg" alt="Img" height="130" width="197">
+					<div class="framecontainer">
+						<div class="box">
+							<img src="images/handshake.jpg" alt="Img">
+						</div>
+						<p><b>TITLE</b><br>Our website templates are created with inspiration, checked for quality and originality.</p>
+						<a href="index.html" class="more">Read More</a>
 					</div>
-					<p><b>Our lawyers</b><br>Our website templates are created with inspiration, checked for quality and originality.</p>
-					<a href="index.html" class="more">Read More</a>
 				</div>
 
 				<div id="frame3">
-					<div class="box">
-						<img src="images/meeting.jpg" alt="Img" height="130" width="197">
+					<div class="framecontainer">
+						<div class="box">
+							<img src="images/smile.jpg" alt="Img">
+						</div>
+						<p><b>TITLE</b><br> Our website templates are created with inspiration, checked for quality and originality.</p>
+						<a href="index.html" class="more">Read More</a>
 					</div>
-					<p><b>Our lawyers</b><br> Our website templates are created with inspiration, checked for quality and originality.</p>
-					<a href="index.html" class="more">Read More</a>
 				</div>
 
 				<div id="frame4">
-					<div class="box">
-						<img src="images/meeting.jpg" alt="Img" height="130" width="197">
+					<div class="framecontainer">
+						<div class="box">
+							<img src="images/family-small.jpg" alt="Img">
+						</div>
+						<p><b>TITLE</b><br>Our website templates are created with inspiration, checked for quality and originality.</p>
+						<a href="index.html" class="more">Read More</a>
 					</div>
-					<p><b>Our lawyers</b><br>Our website templates are created with inspiration, checked for quality and originality.</p>
-					<a href="index.html" class="more">Read More</a>
 				</div>
-			</div>		
+			</div>	
 
-		</div>
+			<div id="contenido2">
+				<div class="section a">
+					<div class="cntsection">
+						<h4>THIS IS JUST A PLACEHOLDER</h4>
+						<p>
+							You can remove any link to our website
+							from this website template, 
+							you're free to use this website 
+							template without linking back to us.
+							<br><br>
+						</p>
+					</div>
+				</div>
+
+				<div class="section b">
+					<div class="cntsection">
+						<h4>THIS IS JUST A PLACEHOLDER</h4>
+						<p>
+							ADDRESS: This is just a place holder.
+							<br>
+							PHONE: (+20) 000 222 999
+							<br>
+							EMAIL: This is just a place holder.
+							<br><br>
+						</p>
+					</div>
+				</div>
+
+				<div class="section c">
+					<div class="cntsection">
+						<h4>THIS IS JUST A PLACEHOLDER</h4>
+						<p>
+							This is just a place holder, 
+							so you can see what the site would look like. 
+							This is just a place holder.
+							so you can see what the site would look like. 
+							<br><br>
+						</p>
+					</div>
+				</div>	
+			</div>	
+
+			<div id="footer">
+				<div id="icons">
+					<div id="fcb"></div>
+					<div id="twt"></div>
+					<div id="gog"></div>
+				</div>
+			</div>
+
+		</div><!--Final contenedor-->
 	</body>
 </html>
