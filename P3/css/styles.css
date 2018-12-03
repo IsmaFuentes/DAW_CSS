@@ -339,10 +339,10 @@ body {
 }
 #formulario{
 	text-align: center;
-	align-self: center;
 	left: 0;
 	right: 0;
 	position: absolute;
+	align-self: center;
 }
 
 #close{
@@ -375,10 +375,19 @@ body {
 	margin-left: 7%;
 }
 
+#cont1, #cont2{
+	margin-left: 18px;
+	display: none;
+}
+
 /*Media query*/
 @media screen and (max-width: 600px) {
+	#menu{
+		position: relative;
+	}
 	.logo{
 		background-position: center;
+		background-size: 70%;
 	}
 	.searchbar{
 		display: none;

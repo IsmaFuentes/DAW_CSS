@@ -4,7 +4,8 @@ window.onload = function(){
 	document.getElementById("contactar").onclick = function(){overlay();};
 	document.getElementById("close").onclick = function(){close();};
 	document.getElementById("icon").onclick = function(){desplegar();};
-
+	document.getElementById("prac").onclick = function(){submenu1();};
+	document.getElementById("lawr").onclick = function(){submenu2();};
 }
 
 //muestra la pantalla de contacto
@@ -17,19 +18,44 @@ function close() {
  	document.getElementById("overlay").style.width = "0%";
 }
 
-
-//desplegar - esconder menu responsive
+//mostrar y esconder menu responsive
 var boolean = true;
-
 function desplegar() {
 
 	if(boolean){
 		boolean = false;
 		document.getElementById("cntdesp").style.display = "block";
 	}
-
 	else{
 		boolean = true;
 		document.getElementById("cntdesp").style.display = "none";
+	}
+}
+
+//mostrar y esconder submenú 1
+var practices = true;
+function submenu1() {
+
+	if(practices){
+		practices = false;
+		document.getElementById("cont1").style.display = "block";
+	}
+	else{
+		practices = true;
+		document.getElementById("cont1").style.display = "none";
+	}
+}
+
+//mostrar y esconder submenú 2
+var lawyers = true;
+function submenu2() {
+
+	if(practices){
+		practices = false;
+		document.getElementById("cont2").style.display = "block";
+	}
+	else{
+		practices = true;
+		document.getElementById("cont2").style.display = "none";
 	}
 }
