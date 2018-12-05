@@ -356,10 +356,9 @@ body {
 }
 
 /*Desplegable*/
-#cntdesp{
+#cntdesp {
 	display: none;
 	background-color:#424242;
-	transition: width 1s;
 }
 
 #cntdesp a{
@@ -378,6 +377,13 @@ body {
 #cont1, #cont2{
 	margin-left: 18px;
 	display: none;
+}
+
+.prueba1{
+	display:none;	
+}
+.prueba2{
+	display:block;
 }
 
 /*Media query*/

@@ -6,6 +6,14 @@ window.onload = function(){
 	document.getElementById("icon").onclick = function(){desplegar();};
 	document.getElementById("prac").onclick = function(){submenu1();};
 	document.getElementById("lawr").onclick = function(){submenu2();};
+	//solución al menú desplegable, ahora al dejarlo abierto en movil y volver a pc
+	//este se cierra
+	window.addEventListener("resize", function(){
+		if(window.matchMedia("(min-width: 600px)").matches){
+			document.getElementById("cntdesp").style.display = "none";
+			boolean = true;
+		}
+	});
 }
 
 //muestra la pantalla de contacto
@@ -21,7 +29,6 @@ function close() {
 //mostrar y esconder menu responsive
 var boolean = true;
 function desplegar() {
-
 	if(boolean){
 		boolean = false;
 		document.getElementById("cntdesp").style.display = "block";
@@ -59,3 +66,12 @@ function submenu2() {
 		document.getElementById("cont2").style.display = "none";
 	}
 }
+
+//alternativa al event listener
+/*
+setInterval(contador, 100);
+function contador(){
+	if(window.innerWidth > 600){
+		document.getElementById("cntdesp").style.display = "none";
+	}	
+}*/
