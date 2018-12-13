@@ -1,0 +1,84 @@
+body{
+	margin: 0;
+	font-family: "Helvetica";
+}
+header {
+	width: 90%;
+}
+#iconmenu-close{
+	float: left;
+	font-size:36px;
+	margin-left: 10px;
+	margin-right: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+#iconmenu-open{
+	float: left;
+	font-size:36px;
+	margin-left: 10px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#pop-up-menu > h1{
+	color: red;
+}
+
+#desplegable{
+	display: none;
+	width: 90%;
+	background-color: #ebebe0;
+}
+
+.section {
+	color: red;
+	padding: 10px;
+}
+
+.section > span {
+	cursor: pointer;
+}
+
+#subsection1 {
+	display: none;
+}
+
+#subsection1 > a{
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+}
+
+#subsection1 > a:hover{
+	color: blue;
+}
+
+#subsection2 {
+	display: none;
+}
+
+#subsection2 > a{
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+}
+
+#subsection2 > a:hover{
+	color: blue;
+}
+
+#subsection3 {
+	display: none;
+}
+
+#subsection3 > a{
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+}
+
+#subsection3 > a:hover{
+	color: blue;
+}

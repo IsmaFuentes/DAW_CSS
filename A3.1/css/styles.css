@@ -1,0 +1,163 @@
+body{
+	margin: 0;
+	font-family: "Arial";
+	font-size: 16px;
+}
+
+#container{	
+	margin: auto;
+	margin-top:20px;
+	border: 1px solid lightblue;
+	width: 600px;
+	border-radius: 2px;
+}
+
+#form{
+	width: 95%;
+	margin: auto;
+}
+
+form{
+	display: grid;
+	grid-template-columns: 47.5% 5% 47.5%;
+	grid-template-rows: repeat(5,auto);
+}
+
+.lab{
+	float: right;
+	width: auto;
+	overflow: hidden;
+	border: none;
+	font-size: 14px;
+	outline: none;
+}
+
+#select{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+
+#issue{
+	grid-column: 3;
+	grid-row: 1;
+}
+
+#name{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#surname{
+	grid-column: 3;
+	grid-row: 2;
+}
+
+#mail{
+	grid-column: 1;
+	grid-row: 3;
+}
+
+#phone{
+	grid-column: 3;
+	grid-row: 3;
+}
+
+#txtarea{
+	grid-column: 1 / span 3;
+	grid-row: 4;
+	border:1px solid lightblue;
+	height: 100px;
+}
+
+#enviar{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: blue;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	width: 55px;
+	height: 30px;
+	border-style: none;
+	border-radius: 2px;
+	cursor: pointer;
+	grid-column: 1;
+	grid-row: 5;
+}
+
+#top{
+	width: 95%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#top > h2{
+	color: green;
+	padding-bottom: 5px;
+	border-bottom: 0.5px dotted grey;
+}
+
+label{
+	color: grey;
+	border:1px solid lightblue;
+	margin-bottom: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+label:hover{
+	box-shadow: 0px 0px 1px 1px lightblue;
+}
+
+@media screen and (max-width: 600px) {
+  	#container{
+  		width: 100%;
+  		border: none;
+	}
+	form{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(8,auto);
+	}
+	#select{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	#issue{
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	#name{
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	#surname{
+		grid-column: 1;
+		grid-row: 4;
+	}
+
+	#mail{
+		grid-column: 1;
+		grid-row: 5;
+	}
+
+	#phone{
+		grid-column: 1;
+		grid-row: 6;
+	}
+
+	#txtarea{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.lab{
+		width: 80%;
+	}
+	#enviar{
+		grid-column: 1;
+		grid-row: 8;
+	}
+}

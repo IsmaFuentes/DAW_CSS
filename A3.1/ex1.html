@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>CSS Form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!--Font awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="top">
+				<h2><i class="fa fa-envelope"></i> Leave us a message</h2>
+				<input type="radio" value="Pre-departure">Pre-departure
+				<input type="radio" value="Post-departure">Post-departure
+			</div>
+
+			<div id="form">
+				<form action="dummy.php" method="GET">
+					<label id="select">Issue<select class="lab">
+						<option value="1">Choose an option</option>
+						<option value="2">Queries or concerns</option>
+						<option value="3">Pre-departure</option>
+						<option value="4">Booking cancellation request</option>
+						<option value="5">Booking amendment request</option>
+					</select></label>
+
+					<label id="name">First name
+						<input type="text" name="name" class="lab" maxlength="30" required>
+					</label>
+
+					<label id="mail">E-mail
+						<input type="text" name="email" class="lab" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+					</label>
+
+					<label id="phone">
+						Phone<input type="text" name="phone" class="lab" maxlength="9" pattern="[0-9]{9}" required>
+					</label>
+
+					<label id="issue">Issue
+						<input type="text" name="issue" class="lab" maxlength="25" required>
+					</label>
+
+					<label id="surname">Surname
+						<input type="text" name="surname" class="lab" maxlength="30" required>
+					</label>
+
+					<textarea name="comment" form="usrform" id="txtarea"></textarea>
+
+					<input type="submit" name="enviar" value="send" id="enviar">
+
+				</form>
+
+				
+			</div>
+
+		</div>
+	</body>
+
+</html>

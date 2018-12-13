@@ -1,0 +1,147 @@
+body{
+	background-image: url(../images/bg-pattern.jpg);
+	font-family: "Times New Roman", Times, serif;
+}
+#container {
+	width: 850px;
+	margin: auto;
+	display: grid;
+	grid-template-areas:
+	"navigation"
+	"contents"
+	"contents2"
+	"footer";
+}
+
+
+#navigation {
+	grid-area: navigation;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(7,auto);
+	background-image: url(../images/bg-navigation.png); 
+	text-align: center;
+	height: 50px;
+}
+
+#navigation > a {
+	text-decoration: none;
+	color: white;
+	margin-top: 15px;
+}
+
+#contents{
+	margin-top: 20px;
+	grid-area: contents;
+}
+
+#adbox > h1{
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	text-transform: uppercase;	
+}
+
+#adbox > p > a{
+	text-decoration: none;
+	color: brown;
+}
+
+#contents2{
+	grid-area: contents2;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 65% 2% 33%;
+}
+
+#section{
+	grid-column: 1;
+	background: white;
+}
+
+#aside{
+	grid-column: 3;
+}
+
+#testimonials{
+	width: 95%;
+	margin: auto;
+}
+
+#testimonials > p > span > a{
+	text-decoration: none;
+	color: lightblue;
+}
+
+#testimonials > h3{
+	color: #316e66;
+	font: 16px/20px "Times New Roman", Times, serif;
+	text-transform: uppercase;	
+}
+
+#blogcontainer{
+	width: 95%;
+	margin: auto;
+}
+
+#blogcontainer > h3{
+	color: #316e66;
+	font: 16px/20px "Times New Roman", Times, serif;
+	text-transform: uppercase;	
+}
+
+#blog1 > h4 > a{
+	text-decoration: none;
+	color: brown;
+	font: 18px/24px "Times New Roman", Times, serif;
+}
+
+#blog2 > h4 > a{
+	text-decoration: none;
+	color: brown;
+	font: 18px/24px "Times New Roman", Times, serif;
+}
+
+#footer{
+	grid-area: footer;
+	margin-top: 20px;
+	background-color: #ac9e94;
+	color: #594334;
+	font-size: 14px;
+	line-height: 48px;
+}
+
+#footer > a{
+	text-decoration: none;
+	padding: 6px;
+	color: brown;
+}
+
+#connect{
+	float: right;
+	margin-right: 20px;
+}
+
+#connect a {
+	background: url(../images/icons.png) no-repeat;
+	display: inline-block;
+	height: 23px;
+	width: 23px;
+	margin-left: 10px;
+}
+
+#connect a.pinterest {
+	background-position: 0 -33px;
+}
+#connect a.facebook {
+	background-position: 0 -98px;
+}
+#connect a.twitter {
+	background-position: 0 -164px;
+	width: 28px;
+}
+#connect a.googleplus {
+	background-position: 0 -230px;
+}
+#connect a.pinterest:hover {
+	background-position: 0 0;
+}
