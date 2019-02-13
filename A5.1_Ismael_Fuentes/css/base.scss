@@ -1,0 +1,158 @@
+/***** 1 - VARIABLES *****/
+
+$Arial: Arial, Helvetica, sans-serif;
+$Helvetica-neue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$color1: #356618;
+$color2: #ffffff;
+$color3: #96b285;
+
+
+/***** 2 - INHERITANCE *****/
+
+%format {
+  letter-spacing: 0.028em;
+  line-height: 24px;
+}
+
+%colors {
+  background: $color3;
+  color: $color1; 
+}
+
+/***** 3 MIXINS *****/
+
+@mixin shadows($var1, $var2) {
+  box-shadow:
+    rgba(white, $var1) 0 1px 1px, 
+    rgba(black, $var2) 1px 0 0 inset;
+}
+
+/*IMG RESIZE EFFECT*/
+@mixin transform($var1,$var2) {
+  transform: scale($var1);/*1.05*/
+  transition-duration:$var2;/*0.5s*/
+}
+
+
+body {
+  background: url(../images/bg-body.jpg) repeat;
+  color: $color1;
+  font-family: $Arial;
+  font-size: 14px;
+  margin: 0;
+  min-width: 940px;
+  padding: 0;
+}
+
+a {
+  outline: none;
+}
+
+img {
+  border: 0;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+  a {
+    color: $color1;
+    &:hover {
+      color: #66a143;
+    }
+  }
+}
+
+#page {
+  background: $color1;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 900px;
+}
+
+/***** 4 - OPERATORS *****/
+
+#header {
+  background: $color2;
+  height: 75.5px + 75.5px;
+  a#logo {
+    display: block;
+    height: 86px;
+    padding: 15px 0 0 20px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  > ul {
+    background: #4b4b4b;
+    height: 49px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 900px / 900px * 100%;
+    > li {
+      float: left;
+      position: relative;
+      width: 150px;
+      > a {
+        color: #f0f2c9;
+        display: block;
+        letter-spacing: 0.1em;
+        line-height: 49px;
+        text-align: center;
+        text-decoration: none;
+      }
+      &.current > a {
+        @extend %colors;
+        &:hover {
+          @extend %colors;
+        }
+      }
+    }
+  }
+  ul li {
+    ul li.current a {
+      @extend %colors;
+      &:hover {
+        @extend %colors;
+      }
+    }
+    a:hover {
+      background: #daead0;
+      color: #1b330c;
+    }
+    ul {
+      list-style: none;
+      left: -99999px;
+      margin: 0;
+      overflow: visible;
+      padding: 11px 0 0;
+      position: absolute;
+      top: 49px;
+      width: 150px;
+      z-index: 2;
+    }
+    &:hover ul {
+      left: 0;
+      top: 49px;
+    }
+    ul li {
+      background: #4B4B4B;
+      a {
+        color: #f0f2c9;
+        display: block;
+        line-height: 31px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+/***** 5 - IMPORTS *****/
+
+@import 'part2';
+@import 'part1';

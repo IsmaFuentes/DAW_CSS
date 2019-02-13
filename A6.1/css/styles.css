@@ -1,0 +1,38 @@
+#cabecera {
+	background-image: url("../img/logo.png");
+	background-size: 200px;
+	background-color: #0b244c;
+	background-position: center left 20px; 
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 70px;
+	border-bottom: 2px solid #234984;
+}
+
+.bg-blue{
+	background-color: #0b244c;
+}
+
+.link{
+	color: white;
+	text-transform: uppercase;
+}
+
+#miFooter{
+	background-color: #0b244c;
+	width: 100%;
+	height: 100px;
+}
+
+#advert{
+	margin-top:35px;
+}
+
+/*MEDIA QUERY MOBILE VERSION*/
+@media only screen and (max-width: 765px) {
+
+	#lateral {
+		display: none;
+	}
+
+}
