@@ -1,0 +1,285 @@
+/*
+	Navbar
+*/
+nav > div > ul > li > a{
+	font-family: 'Varela Round';
+  	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+}
+nav > div > ul > li > a:hover{
+	text-decoration: none;
+	color: black;
+	text-shadow: 2px 2px 5px black;
+}
+
+.navbar-toggler {
+	outline: none;
+}
+
+/*
+	Home
+*/
+
+#index {
+	font-family: 'Varela Round';
+}
+
+.masthead {
+	z-index: 0;
+  	width: 100%;
+  	height: 100vh;
+  	background: url("../img/wallpaper.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: scroll;
+  	background-size: cover;
+}
+
+.masthead h1 {
+  	font-size: 2.5rem;
+	line-height: 2.5rem;
+  	letter-spacing: 0.8rem;
+  	color: white;
+  	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), gray);
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;*/
+}
+.masthead h2 {
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+ 	line-height: 2.5rem;
+  	letter-spacing: 0.3rem;
+  	max-width: 30rem;
+  	font-size: 16px;
+}
+
+
+/*
+	About
+*/
+.about-section {
+  	padding-top: 10rem;
+  	background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+	font-family: 'Varela Round';
+	height: 700px;
+}
+
+/*
+	Sections
+*/
+.bgblack {
+  	background-color: #161616 !important;
+}
+.project-text {
+  	padding: 3rem;
+  	font-size: 90%;
+}
+#gear {
+	padding-bottom: 50px;
+	font-family: 'Varela Round';
+}
+.link{
+	text-decoration: none;
+	color: white;
+}
+.link:hover{
+	text-decoration: none;
+	color: grey;
+	text-shadow: 2px 2px 5px black;
+}
+
+/*
+	Register section
+*/
+#register {
+	font-family: 'Varela Round';
+  	background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+/*
+	Contact
+*/
+.signup-section {
+  	padding: 10rem 0;
+  	font-family: 'Varela Round';
+}
+
+#contactus {
+  	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*
+	Footer
+*/
+#footer {
+	font-family: 'Varela Round';
+	background: linear-gradient(to top, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+.social a {
+	text-align: center;
+	height: 3rem;
+	width: 3rem;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 100%;
+	line-height: 3rem;
+	color: rgba(255, 255, 255, 0.3);
+}
+.btn-primary {
+  	background-color: #64a19d;
+}
+.btn-primary:hover {
+  	background-color: #4f837f;
+}
+.btn-primary:focus {
+  	background-color: #4f837f;
+  	color: white;
+}
+.btn-primary:active {
+  	background-color: #467370 !important;
+}		
+
+/*  Kayak, Paddles and Gear page  */
+
+#cuerpo{
+	font-family: 'Varela Round';
+}
+
+/* Breadcrumb */
+.breadcrumb{
+	background-color: transparent;
+}
+ol > li > a{
+	color: black;
+}
+ol > li > a:hover{
+	text-decoration: none;
+	color: grey;
+	text-shadow: 2px 2px 5px black;
+}
+
+/* Product page */
+#añadir-productos > button {
+	border-radius: 0;
+}
+#añadir-productos > div > input {
+	border-radius: 0;
+}
+.bglight {
+	background:rgba(1,1,1,0.14) !important; 
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;   
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: black;
+  cursor: pointer;
+}
+/*Filters*/
+.contenedor {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.contenedor input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.contenedor:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.contenedor input:checked ~ .checkmark {
+  background-color: black;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.contenedor input:checked ~ .checkmark:after {
+  display: block;
+}
+.contenedor .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+/*  Registro */
+.formulario {
+	background:rgba(1,1,1,0.5) !important; 
+	padding: 20px;
+	border-radius: 15px;
+}
+
+#homelink {
+	text-decoration: none;
+}
+
+/* Login dropdown*/
+.dropdown {
+	font-family: 'Varela Round';
+}
+
+/* Product filters */
+
+#searchproduct {
+	width: 150px;
+}
+
+/* cart */
+.cartimg {
+	width: 150px;
+}
+
+#table{
+	border-collapse: separate;
+	border-spacing: 10px;
+}

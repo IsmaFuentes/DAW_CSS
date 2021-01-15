@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>UK | Product</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Bootstrap4 libraries-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<!--Font awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Main css-->
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<!--Fonts-->
+	    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	</head>
+
+	<body id="cuerpo">
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark" id="miNav">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="collapse">
+		    <ul class="navbar-nav">
+		      <li class="nav-item px-2">
+		        <a href="../index.html" class="nav-link">Home</a>
+		      </li> 
+		    </ul>
+		    <!--Cart / Login - right side-->
+		    <ul class="navbar-nav ml-auto">
+		    <!--Cart-->
+		      <li class="nav-item px-2 my-1">
+		        <button class="btn btn-secondary" data-toggle="modal" data-target="#modalChart">
+		        	<i class="fa fa-cart-plus"></i>
+		        </button>
+		      </li>  
+		      <!--Login-->
+		      <li class="nav-item px-2 dropdown my-1">
+		      	<button class="btn btn-secondary dropdown-toggle" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></button>
+		      	<div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="dropdownButton">
+		      		<!--Username-->
+					<div class="input-group p-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="Name"/>
+					</div>
+		      		<!--Password-->
+					<div class="input-group p-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text" ><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="Pass"/>
+					</div>
+					<!--Login button-->
+					<div class="input-group p-2">
+						<a href="#" class="link text-black-50 mx-auto">Login</a>
+					</div>		
+					<!--Register button-->
+					<div class="input-group p-2">
+						<a href="../register.html" class="link text-black-50 mx-auto">Register</a>
+					</div>	
+		      	</div>
+		      </li>  
+		    </ul>
+		  </div>  
+		</nav>
+
+		<!--Ventana modal // cesta de la compra-->
+		<div class="modal fade" id="modalChart" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <!--Header-->
+		      <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                </button>
+		      </div> 
+		      <!--Products-->
+		      <div class="modal-body">
+		      	<table class="table table striped">
+		      	  <tbody>
+		      	  	<tr class="bglight">
+		      	  	  <th scsope="row"></th>
+		      	  	  <td>
+		      	  	  	<button type="button" class="close">
+		      	  	  		<span aria-hidden="true">&times;</span>
+		      	  	  	</button>
+		      	  	  	<img src="../img/sete2.png" class="cartimg">
+		      	  	  	<p>K1 Nelo 7 <span class="badge badge-dark">1299,99€</span></p>
+		      	  	  </td>	
+		      	  	</tr>
+		      	  	<tr class="bglight">
+		      	  	  <th scsope="row"></th>
+		      	  	  <td>
+		      	  	  	<button type="button" class="close">
+		      	  	  		<span aria-hidden="true">&times;</span>
+		      	  	  	</button>
+		      	  	  	<img src="../img/sete2.png" class="cartimg">
+		      	  	  	<p>K1 Nelo 7 <span class="badge badge-dark">1299,99€</span></p>
+		      	  	  </td>	
+		      	  	</tr>
+		      	  </tbody>
+		      	</table>
+		      </div>
+		      <!--Footer-->
+		      <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                <a href="../cart.html" class="btn btn-dark">Go to cart</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!--Breadcrumb-->
+		<div aria-label="breadcrumb" id="breadcrumb">
+		  <ol class="breadcrumb mt-2">
+		    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+		    <li class="breadcrumb-item"><a href="../kayaks.html">Kayaks</a></li>
+		    <li class="breadcrumb-item"><a href="products.html">Flatwater</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Product</li>
+		  </ol>
+		</div>
+
+		<!--Product-->
+		<section id="products">
+
+			<div class="container">
+				<!--inicio contenedor-->
+				<h4 class="card-title">K1 Nelo 5 - Ace</h4><hr>
+				<div class="row justify-content-center mb-5 mb-lg-0 bglight">
+					<div class="col-lg-6">
+						<div class="card-body">
+							<!--Product image (left)-->
+							<img class="card-img-top mb-1" src="../img/nelo2.jpg" alt="img">
+							<!--Carousel with product images-->
+							<div id="carousel" class="carousel slide" data-ride="carousel">
+								<!--slides-->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="card-img-top" src="../img/slide1.PNG" alt="img">
+									</div>
+									<div class="carousel-item">
+										<img class="card-img-top" src="../img/slide2.PNG" alt="img">
+									</div>
+									<div class="carousel-item">
+										<img class="card-img-top" src="../img/slide3.PNG" alt="img">
+									</div>
+								</div>
+								<!--Left & right controls-->
+								<a class="carousel-control-prev" href="#carousel" data-slide="prev">
+									<span class="carousel-control-prev-icon"></span>
+								</a>
+								<a class="carousel-control-next" href="#carousel" data-slide="next">
+								    <span class="carousel-control-next-icon"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--Product details (right)-->
+					<div class="col-lg-6">
+						<div class="card-body">
+							<h6>Product details:</h6><hr>
+							<p class="card-text text-justify">Pianoforte solicitude so decisively unpleasing conviction is partiality he. Or particular so diminution entreaties oh do. Real he me fond show gave shot plan. Mirth blush linen small hoped way its along. Resolution frequently apartments off all discretion devonshire. Saw sir fat spirit seeing valley. He looked or valley lively. If learn woody spoil of taken he cause. </p>
+							<table class="table table striped">
+								<tbody>
+						      	  <tr>
+						      	  	 <td>
+						      	  	   <h4><span class="badge badge-success">2000€</span></h4>
+						      	  	   <i class="fa fa-star text-warning"></i>
+						      	  	   <i class="fa fa-star text-warning"></i>
+						      	  	   <i class="fa fa-star text-warning"></i>
+						      	  	   <i class="fa fa-star text-warning"></i>
+						      	  	   <i class="fa fa-star text-warning"></i>
+						      	  	 </td>
+						      	  </tr>
+						      	  <tr>
+						      	  	 <td>
+						      	  	   <div class="input-group" id="añadir-productos">
+							      	  	  <button class="btn btn-danger"><i class="fa fa-minus"></i></button>
+							      	  	   <div class="col-2 p-0">
+							      	  	  	 <input type="text" class="form-control text-center" value="0">
+							      	  	   </div>
+							      	  	  <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+							      	  	  <a href="#" class="ml-3 btn btn-dark">Add to cart</a>
+						      	  	   </div>
+						      	  	 </td>
+						      	  </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+				<!--Final contenedor-->
+			</div>
+		</section>
+
+		<section id="relatedproducts" class="mt-5">
+			<div class="container">
+			<h4 class="card-title">Related products</h4><hr>
+				<div class="row">
+					<!--related product 1-->
+					<div class="col-lg-4">
+						<div class="card mb-5 mb-lg-0">
+							<div class="card-body bglight">
+								<h5 class="card-title text-dark text-uppercase text-center">"El diablo"</h5>
+								<hr>
+								<img class="card-img-top" src="../img/product1.jpg">
+								<a href="#" class="btn btn-dark text-uppercase mt-2">view</a>
+							</div>
+ 						</div>
+					</div>
+					<!--related product 2-->
+					<div class="col-lg-4">
+						<div class="card mb-5 mb-lg-0">
+							<div class="card-body bglight">
+								<h5 class="card-title text-dark text-uppercase text-center">"V12X"</h5>
+								<hr>
+								<img class="card-img-top" src="../img/product2.jpg">
+								<a href="#" class="btn btn-dark text-uppercase mt-2">view</a>
+							</div>
+ 						</div>
+					</div>
+					<!--related product 3-->
+					<div class="col-lg-4">
+						<div class="card mb-5 mb-lg-0">
+							<div class="card-body bglight">
+								<h5 class="card-title text-dark text-uppercase text-center">"Stinger"</h5>
+								<hr>
+								<img class="card-img-top" src="../img/product3.jpg">
+								<a href="#" class="btn btn-dark text-uppercase mt-2">view</a>
+							</div>
+ 						</div>
+					</div>
+				</div>	
+				<!--Pagination-->
+				<div class="mt-2">
+					<nav aria-label="...">
+						<ul class="pagination pagination-sm">
+							<li class="page-itme">
+								<a class="page-link text-black-50" href="#" tabindex="-1"><i class="fa fa-arrow-left"></i></a>
+							</li>
+	    					<li class="page-item">
+	    						<a class="page-link text-black-50" href="#">1</a>
+	    					</li>
+	    					<li class="page-item">
+	    						<a class="page-link text-black-50" href="#">2</a>
+	    					</li>
+	    					<li class="page-item">
+	    						<a class="page-link text-black-50" href="#">3</a>
+	    					</li>
+	    					<li class="page-item">
+	    						<a class="page-link text-black-50" href="#"><i class="fa fa-arrow-right"></i></a>
+	    					</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+	    <!-- Footer -->
+	    <footer class="bg-black small text-center text-white-50 p-5 mt-5" id="footer">
+	      <div class="social d-flex justify-content-center m-5">
+	          <a href="#" class="mx-2"><i class="fa fa-twitter"></i></a>
+	          <a href="#" class="mx-2"><i class="fa fa-facebook-f"></i></a>
+	       	  <a href="#" class="mx-2"><i class="fa fa-github"></i></a>
+	      </div>
+
+	      <div class="container">
+	        Copyright &copy; Ultimate Kayak 2018
+	      </div>
+	    </footer>
+
+	    <!--Scripts de bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	    <!--Main js-->
+		<script type="text/javascript" src="../js/js.js"></script>
+
+	</body>
+</html>

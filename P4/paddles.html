@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>UK | Paddles</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Bootstrap4 libraries-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<!--Font awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Main css-->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!--Fonts-->
+	    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	</head>
+
+	<body id="cuerpo">
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark" id="miNav">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="collapse">
+		    <ul class="navbar-nav">
+		      <li class="nav-item px-2">
+		        <a href="paddles.html" class="nav-link">Paddles</a>
+		      </li>
+		      <li class="nav-item px-2">
+		        <a href="kayaks.html" class="nav-link">Kayaks</a>
+		      </li>
+		      <li class="nav-item px-2">
+		        <a href="gear.html" class="nav-link">Gear</a>
+		      </li>   
+		    </ul>
+		    <!--Cart / Login - right side-->
+		    <ul class="navbar-nav ml-auto">
+		    <!--Cart-->
+		      <li class="nav-item px-2 my-1">
+		        <button class="btn btn-secondary" data-toggle="modal" data-target="#modalChart">
+		        	<i class="fa fa-cart-plus"></i>
+		        </button>
+		      </li>  
+		      <!--Login-->
+		      <li class="nav-item px-2 dropdown my-1">
+		      	<button class="btn btn-secondary dropdown-toggle" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></button>
+		      	<div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="dropdownButton">
+		      		<!--Username-->
+					<div class="input-group p-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="Name"/>
+					</div>
+		      		<!--Password-->
+					<div class="input-group p-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text" ><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="Pass"/>
+					</div>
+					<!--Login button-->
+					<div class="input-group p-2">
+						<a href="#" class="link text-black-50 mx-auto">Login</a>
+					</div>		
+					<!--Register button-->
+					<div class="input-group p-2">
+						<a href="register.html" class="link text-black-50 mx-auto">Register</a>
+					</div>	
+		      	</div>
+		      </li>  
+		    </ul>
+		  </div>  
+		</nav>
+
+		<!--Ventana modal // cesta de la compra-->
+		<div class="modal fade" id="modalChart" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <!--Header-->
+		      <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                </button>
+		      </div> 
+		      <!--Products-->
+		      <div class="modal-body">
+		      	<table class="table table striped">
+		      	  <tbody>
+		      	  	<tr class="bglight">
+		      	  	  <th scsope="row"></th>
+		      	  	  <td>
+		      	  	  	<button type="button" class="close">
+		      	  	  		<span aria-hidden="true">&times;</span>
+		      	  	  	</button>
+		      	  	  	<img src="img/sete2.png" class="cartimg">
+		      	  	  	<p>K1 Nelo 7 <span class="badge badge-dark">1299,99€</span></p>
+		      	  	  </td>	
+		      	  	</tr>
+		      	  	<tr class="bglight">
+		      	  	  <th scsope="row"></th>
+		      	  	  <td>
+		      	  	  	<button type="button" class="close">
+		      	  	  		<span aria-hidden="true">&times;</span>
+		      	  	  	</button>
+		      	  	  	<img src="img/sete2.png" class="cartimg">
+		      	  	  	<p>K1 Nelo 7 <span class="badge badge-dark">1299,99€</span></p>
+		      	  	  </td>	
+		      	  	</tr>
+		      	  </tbody>
+		      	</table>
+		      </div>
+		      <!--Footer-->
+		      <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                <a href="cart.html" class="btn btn-dark">Go to cart</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!--Breadcrumb-->
+		<div aria-label="breadcrumb">
+		  <ol class="breadcrumb mt-2">
+		    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Paddles</li>
+		  </ol>
+		</div>
+
+		<!--Product section-->
+		<section id="subcategorias" class="pb-5">
+
+		  <div class="container">
+          	<!--Flatwater subproduct1-->
+          	 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          	  <div class="col-lg-6">
+          	  	<img class="img-fluid" src="img/paddles2.jpg" alt="">
+          	  </div>
+          	  <div class="col-lg-6 text-center bgblack">
+          	   <div class="bg-black text-center h-100 project">
+	            <div class="d-flex h-100">
+	             <div class="project-text w-100 my-auto text-center text-lg-left">
+	               <h4 class="text-white">Recreational</h4>
+	               <p class="mb-0 text-white-50">Perfect for initiation and recreation courses.</p>
+	               <a href="products/products.html" class="link">Click here</a>
+	             </div>
+	            </div>
+          	   </div>
+          	  </div>
+          	 </div>
+
+          	 <br>
+          	<!--Surfski subproduct2-->
+          	 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          	  <div class="col-lg-6">
+          	  	<img class="img-fluid" src="img/kayak4.jpg" alt="">
+          	  </div>
+          	  <div class="col-lg-6 text-center bgblack">
+          	   <div class="bg-black text-center h-100 project">
+	            <div class="d-flex h-100">
+	             <div class="project-text w-100 my-auto text-center text-lg-left">
+	               <h4 class="text-white">Wood paddles</h4>
+	               <p class="mb-0 text-white-50">The oldest model but still used today by kayak enthusiasts.</p>
+	               <a href="products/products.html" class="link">Click here</a>
+	             </div>
+	            </div>
+          	   </div>
+          	  </div>
+          	 </div>
+
+          	<br>
+          	<!--Traditional subproduct3-->
+          	 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          	  <div class="col-lg-6">
+          	  	<img class="img-fluid" src="img/paddles3.jpg" alt="">
+          	  </div>
+          	  <div class="col-lg-6 text-center bgblack">
+          	   <div class="bg-black text-center h-100 project">
+	            <div class="d-flex h-100">
+	             <div class="project-text w-100 my-auto text-center text-lg-left">
+	               <h4 class="text-white">Tear blade</h4>
+	               <p class="mb-0 text-white-50">Designed to offer the best performance in competition.</p>
+	               <a href="products/products.html" class="link">Click here</a>
+	             </div>
+	            </div>
+          	   </div>
+          	  </div>
+          	 </div>
+          	</div>
+
+          </div>
+
+		</section>
+
+	    <!-- Footer -->
+	    <footer class="bg-black small text-center text-white-50 p-5" id="footer">
+	      <div class="social d-flex justify-content-center m-5">
+	          <a href="#" class="mx-2"><i class="fa fa-twitter"></i></a>
+	          <a href="#" class="mx-2"><i class="fa fa-facebook-f"></i></a>
+	       	  <a href="#" class="mx-2"><i class="fa fa-github"></i></a>
+	      </div>
+
+	      <div class="container">
+	        Copyright &copy; Ultimate Kayak 2018
+	      </div>
+	    </footer>
+
+	    <!--Scripts de bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	    <!--Main js-->
+		<script type="text/javascript" src="js/js.js"></script>
+	</body>
+
+</html>
