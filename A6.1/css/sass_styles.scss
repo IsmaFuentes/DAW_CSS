@@ -1,0 +1,99 @@
+/*** VARIABLES ***/
+$corlor1: #0b244c;
+$color2: #234984;
+
+/***INHERITANCE***/
+%link_format{
+  color: white;
+  text-transform: uppercase;  
+}
+
+/***MIXINS***/
+
+@mixin grayscale_element($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}
+
+%hidden_element{
+  margin: auto;
+  width: 65%;
+  display: none;
+}
+
+#cabecera {
+  background-image: url("../img/logo.png");
+  background-size: 200px;
+  background-color: $corlor1;
+  background-position: center left 20px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid $color2;
+}
+
+.bg-blue {
+  background-color: $corlor1;
+}
+
+.link {
+  @extend %link_format;
+}
+
+#miFooter {
+  background-color: $corlor1;
+  width: 100%;
+  height: 110px;
+}
+
+#advert {
+  margin-top: 57px;
+}
+
+#miFooter {
+  display: grid;
+}
+
+#footerIcons {
+  margin: auto;
+  > a {
+    margin: 15px;
+  }
+}
+
+#tabla {
+  font-size: 12px;
+}
+
+#publimovil {
+  width: 100%;
+  background-image: url("../img/fifa.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  display: none;
+}
+
+.gray:hover{
+  @include grayscale_element(100%);
+}
+
+.hidden {
+  @extend %hidden_element;
+}
+
+#floatingBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
+
+/***IMPORTS***/
+
+@import 'noticia';
+@import 'registro';
+@import 'responsive';

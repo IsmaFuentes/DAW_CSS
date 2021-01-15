@@ -1,0 +1,54 @@
+/**PAGINA DE UNA NOTICIA**/
+
+#noticia {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 65% 5% 30%;
+  grid-template-areas: "left nothing right";
+}
+
+#content_left {
+  grid-area: left;
+}
+
+#content_right {
+  grid-area: right;
+  > ul {
+    text-align: center;
+    > li {
+      display: inline-block;
+      list-style-type: none;
+    }
+  }
+}
+
+.embed {
+  width: 85%;
+  border: none;
+}
+
+#related-news {
+  margin: auto;
+  display: flex;
+}
+
+.card-container {
+  margin: auto;
+  width: 80%;
+}
+
+.txt-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#card1, #card2, #card3 {
+  font-size: 12px;
+}
+
+#links {
+  margin: auto;
+  width: 185px;
+}

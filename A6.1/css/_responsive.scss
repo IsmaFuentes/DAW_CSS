@@ -1,0 +1,39 @@
+/*TABLET - IPAD VERSION*/
+@media only screen and (max-width: 1000px) {
+  /*NOTICIA*/
+  #noticia {
+    grid-template-columns: 100%;
+    grid-template-areas: "left";
+  }
+  #content_right {
+    display: none;
+  }
+  #card1, #card2 {
+    font-size: 16px;
+  }
+  #card3, .text {
+    display: none;
+  }
+  #tabla {
+    text-align: center;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+/*MOBILE VERSION*/
+@media only screen and (max-width: 765px) {
+  #lateral, #miCarousel {
+    display: none;
+  }
+  #publimovil {
+    display: block;
+  }
+  #related-news {
+    flex-wrap: wrap;
+  }
+  #card2 {
+    display: none;
+  }
+}

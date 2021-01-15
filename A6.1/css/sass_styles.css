@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*** VARIABLES ***/
+/***INHERITANCE***/
+.link {
+  color: white;
+  text-transform: uppercase; }
+
+/***MIXINS***/
+.hidden {
+  margin: auto;
+  width: 65%;
+  display: none; }
+
+#cabecera {
+  background-image: url("../img/logo.png");
+  background-size: 200px;
+  background-color: #0b244c;
+  background-position: center left 20px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid #234984; }
+
+.bg-blue {
+  background-color: #0b244c; }
+
+#miFooter {
+  background-color: #0b244c;
+  width: 100%;
+  height: 110px; }
+
+#advert {
+  margin-top: 57px; }
+
+#miFooter {
+  display: grid; }
+
+#footerIcons {
+  margin: auto; }
+  #footerIcons > a {
+    margin: 15px; }
+
+#tabla {
+  font-size: 12px; }
+
+#publimovil {
+  width: 100%;
+  background-image: url("../img/fifa.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  display: none; }
+
+.gray:hover {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+#floatingBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; }
+
+/***IMPORTS***/
+/**PAGINA DE UNA NOTICIA**/
+#noticia {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 65% 5% 30%;
+  grid-template-areas: "left nothing right"; }
+
+#content_left {
+  grid-area: left; }
+
+#content_right {
+  grid-area: right; }
+  #content_right > ul {
+    text-align: center; }
+    #content_right > ul > li {
+      display: inline-block;
+      list-style-type: none; }
+
+.embed {
+  width: 85%;
+  border: none; }
+
+#related-news {
+  margin: auto;
+  display: flex; }
+
+.card-container {
+  margin: auto;
+  width: 80%; }
+
+.txt-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+#card1, #card2, #card3 {
+  font-size: 12px; }
+
+#links {
+  margin: auto;
+  width: 185px; }
+
+/*PÁGINA DE LOGIN-REGISTRO*/
+#login, #registro {
+  width: 70%;
+  margin: auto; }
+
+#boton-collapse {
+  text-decoration: none; }
+
+/*TABLET - IPAD VERSION*/
+@media only screen and (max-width: 1000px) {
+  /*NOTICIA*/
+  #noticia {
+    grid-template-columns: 100%;
+    grid-template-areas: "left"; }
+
+  #content_right {
+    display: none; }
+
+  #card1, #card2 {
+    font-size: 16px; }
+
+  #card3, .text {
+    display: none; }
+
+  #tabla {
+    text-align: center; }
+
+  .hidden {
+    display: block; } }
+/*MOBILE VERSION*/
+@media only screen and (max-width: 765px) {
+  #lateral, #miCarousel {
+    display: none; }
+
+  #publimovil {
+    display: block; }
+
+  #related-news {
+    flex-wrap: wrap; }
+
+  #card2 {
+    display: none; } }
+
+/*# sourceMappingURL=sass_styles.css.map */
